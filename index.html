@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+   
+    <main>
+        <header>
+            <img src="assets/Frame 6.png" alt="Logo da Alura">
+        </header>
+        <section id="conteudo">
+            <div>
+              <textarea name="" id="texto" cols="30" rows="10" placeholder="Digite seu texto aqui"></textarea>
+            </div>
+
+            <div>
+                <div class="apresentacao__alerta">
+                    <img src="/assets/icon-alert.png" alt="ícone de alerta">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="apresentacao__botao">
+                    <button onclick="criptografarTexto()" class="criptografar__botao">Criptografar</button>
+                    <button onclick="descriptografarTexto()" class="descriptografar__botao">Descriptografar</button>
+                </div>  
+            </div>
+        </section>
+        <footer>
+            <p>Desenvolvido por Adriana Dos Reis</p>
+        </footer>
+    </main>
+
+    <div id="sidebar">
+        <div id="semCont">
+            <img src="assets/High quality products 1 1.png" alt="foto de pesquisa">   
+            <h2>Nenhuma mensagem encontrada</h2>
+            <hr/>
+            <p>Digite um texto que você deseja <br> criptografar ou descriptografar.</p>
+        </div>
+        <div id="comCont" hidden>
+            <h2 id="contTexto"></h2>
+            <button onclick="copiarTexto()">Copiar</button>
+        </div>
+    </div>        
+        
+    <script src="script.js"> </script> 
+</body>
+</html>
